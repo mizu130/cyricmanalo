@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Cyric Manalo - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        /* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 15px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-links a:hover {
+    color: #ff7f50;
+}
+
+/* Container for main content */
+.container {
+    margin: 40px;
+}
+
+.header {
+    text-align: center;
+}
+
+.myphoto {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.cyric {
+    display: block;
+    margin: 5px 0;
+}
+
+
+section {
+    margin: 20px 0;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+   
+}
+
+.header {
+    text-align: center;
+}
+
+
+.header h1,
+.header h4,
+.cyric {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    text-align: center; 
+}
+
+th, td {
+    padding: 10px;
+}
+
+
+.gg {
+    text-align: center;
+}
+
+.w-50 {
+    text-align: center;
+}
+
+input, button {
+    display: block;
+    margin: 10px auto;
+}
+li{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="navbar-logo"></a>
+            <ul class="navbar-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container" id="home">
+        <header class="header">
+            <div>
+                <div class="cover-photo"></div>
+                <img class="myphoto" src="chano.jpg" alt="Christian's Photo">
+                <h1>Christian Cyric Manalo</h1>
+                <h4>Banaba West, Batangas City</h4>
+                <span class="cyric">09385324765</span> 
+                <span class="cyric">manalochristian116@gmail.com</span>
+            </div>
+        </header>
+
+        <section id="summary" class="cyric1">
+            <h2>Summary</h2>
+            <p class="ren">
+                Even better than listing a language in your skills section is relaying your experience participating in a club. Being able to speak a second (or third, or fourth) language is always a valuable asset.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <table border="2px">
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th>Course</th>
+                        <th>Section</th>
+                        <th>School Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Banaba West Elementary School</td>
+                        <td></td>
+                        <td>Rizal</td>
+                        <td>2008-2014</td>
+                    </tr>
+                    <tr>
+                        <td>Banaba West Integrated School</td>
+                        <td></td>
+                        <td>Wisdom</td>
+                        <td>2015-2019</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        
+        
+            <section class="gg"> 
+                <h2>Technical Skills</h2>
+                <ul>
+                 <p>Hardware & Software Troubleshooting</p>
+                    <p>Microsoft Office (Word, Excel, PowerPoint)</p> 
+                </ul>
+            </section>
+           
+
+            <section class="gg">
+            <h2>Personal Skills</h2>
+            <ul>
+                <p>Flexible and Willing to be Trained</p>
+                <p>Time Management</p>
+                 <p>Hardworking</p>
+            </ul>
+            </section>
+
+        <section class="gg">
+        <h2>Seminar</h2>
+            <ul>
+                <p>ISITE</p>
+                <p>Y4IT RESEARCH</p>
+                 <p>HACKIN KLNG</p>
+                 <P>BITS-2023</P>
+                 <p>BITS-2024</p>
+                 <p>JARVIS</p>
+            </ul>
+        </section>
+
+        
+        <section class="gg">
+            <h2>Interactive Sections</h2>
+            
+            <input id="input" placeholder="Enter a Date (e.g. 2024-12-14)">
+            <button onclick="lowsiq()">Click Me</button>
+            <p id="meny"></p>
+
+            
+            <input id="egg" placeholder="Enter your age">
+            <button onclick="manalo()">Check Age</button>
+        </section>
+
+       
+        <section class="gg">
+            <div class="container mt-3 d-flex flex-column">
+                <div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter Pokémon Name" id="pokemon-name">
+                        <button class="btn btn-outline-secondary" type="button" id="search-pokemon">Search</button>
+                    </div>
+
+                    <div class="w-50">
+                        <div class="card">
+                            <img class="card-img-top img-responsive" width="250" id="pokemon-image">
+                            <div class="card-body">
+                                <h5 class="card-title">Name: <span id="pokemon-name-title"></span></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Type: <span id="pokemon-type"></span></h6>
+                                <h6 class="card-subtitle mb-2 text-muted">Height: <span id="pokemon-height"></span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+       
+        function lowsiq() {
+            const inputDate = document.getElementById('input').value;
+            const day = new Date(inputDate);
+            const today = day.getDay();
+            let dayValue = "";
+            switch(today){
+                case 0: dayValue="Sunday"; break;
+                case 1: dayValue= "Monday"; break;
+                case 2: dayValue= "Tuesday"; break;
+                case 3: dayValue="Wednesday"; break;
+                case 4: dayValue="Thursday"; break;
+                case 5: dayValue="Friday"; break;
+                case 6: dayValue="Saturday"; break;
+            }
+            document.getElementById("meny").innerHTML = dayValue;
+        }
+
+       
+        function manalo() {
+            var ggInput = document.getElementById('egg').value;
+            console.log(2028 - parseInt(ggInput));
+            if(parseInt(ggInput) >= 18){
+                console.log("Pwede na makulong");
+            } else {
+                console.log("Bata pa");
+            }
+        }
+
+        var search_pokemon = $("#search-pokemon");
+        search_pokemon.click(function () {
+            var pokemon_name = $("#pokemon-name").val();
+            $.ajax({
+                url: "https://pokeapi.co/api/v2/pokemon/" + pokemon_name,
+                type: "GET",
+                success: function (data) {
+                    const pokemon_image = data.sprites.other.home.front_default;
+                    const pokemon_name = data.name;
+                    const pokemon_type = data.types[0].type.name;
+                    const pokemon_height = data.height;
+                    $("#pokemon-name-title").text(pokemon_name.toUpperCase());
+                    $("#pokemon-type").text(pokemon_type.toUpperCase());
+                    $("#pokemon-image").attr("src", pokemon_image);
+                    $("#pokemon-height").text(pokemon_height);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
